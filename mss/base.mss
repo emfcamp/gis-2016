@@ -127,3 +127,7 @@
     polygon-fill: #add19e;
 }
 
+#areas_camping {
+    polygon-fill: #A3F7A1;
+}
+
