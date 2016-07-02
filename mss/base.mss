@@ -129,5 +129,6 @@
 
 #areas_camping {
     polygon-fill: #A3F7A1;
+    polygon-smooth: 0.5;
 }
 
