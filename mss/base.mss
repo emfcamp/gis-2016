@@ -89,6 +89,17 @@
     polygon-fill: #888;
 }
 
+#showers {
+    line-color: blue;
+    line-width: 1;
+}
+
+#water_taps {
+    marker-fill: blue;
+    marker-width: 10;
+    marker-height: 10;
+}
+
 #trees {
     ::canopy {
     opacity: 0.3;
