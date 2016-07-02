@@ -89,6 +89,11 @@
     polygon-fill: #888;
 }
 
+#installations {
+    line-color: yellow;
+    line-width: 1;
+}
+
 #showers {
     line-color: blue;
     line-width: 1;
