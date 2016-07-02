@@ -45,21 +45,24 @@
     line-width: 1;
 }
 
-#labels {
+#labels, #tents, #installations, #buildings {
     text-name: "[text]";
+    text-vertical-alignment: middle;
+    text-horizontal-alignment: middle;
+    text-halo-fill: rgba(255,255,255,0.6);
+}
+
+#labels {
     text-size: 14;
     text-face-name: @bold-font;
     text-halo-radius: 2;
-    text-halo-fill: rgba(255,255,255,0.6);
 }
 
 #tents {
     [zoom > 17] {
-        text-name: "[text]";
         text-size: 11;
         text-face-name: @normal-font;
         text-halo-radius: 1;
-        text-halo-fill: rgba(255,255,255,0.6);
         text-wrap-width: 50;
         text-wrap-before: true;
     }
@@ -68,19 +71,15 @@
 }
 
 #tents[text=~ "(Stage .*|Lounge|Bar)"] {
-    text-name: "[text]";
     text-face-name: @bold-font;
     text-size: 14;
     text-halo-radius: 2;
-    text-halo-fill: rgba(255,255,255,0.6);
 }
 
 #buildings {
-    text-name: "[text]";
     text-size: 11;
     text-face-name: @normal-font;
     text-halo-radius: 1;
-    text-halo-fill: rgba(255,255,255,0.6);
     polygon-fill: #ddd;
 }
 
