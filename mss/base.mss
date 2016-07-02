@@ -63,7 +63,7 @@
         text-wrap-width: 50;
         text-wrap-before: true;
     }
-    line-color: #992;
+    line-color: #171123;
     line-width: 1;
 }
 
@@ -71,7 +71,6 @@
     text-name: "[text]";
     text-face-name: @bold-font;
     text-size: 14;
-    text-dx: 2;
     text-halo-radius: 2;
     text-halo-fill: rgba(255,255,255,0.6);
 }
@@ -90,8 +89,15 @@
 }
 
 #installations {
-    line-color: yellow;
+    line-color: #811453;
     line-width: 1;
+    [zoom > 17] {
+        text-name: "[text]";
+        text-size: 11;
+        text-face-name: @normal-font;
+        text-halo-radius: 1;
+        text-halo-fill: rgba(255,255,255,0.6);
+    }
 }
 
 #showers {
