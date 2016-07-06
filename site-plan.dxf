@@ -489,19 +489,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2457576.89224537
+2457576.926192129
   9
 $TDUCREATE
  40
-2457576.89224537
+2457576.926192129
   9
 $TDUPDATE
  40
-2457576.89224537
+2457576.926192129
   9
 $TDUUPDATE
  40
-2457576.89224537
+2457576.926192129
   9
 $TDINDWG
  40
@@ -929,7 +929,7 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{5C32BC79-08D1-4879-A37C-1806001ABBE6}
+{684AC310-DE5F-4C53-B782-851BE0ACA849}
   9
 $VERSIONGUID
   2
@@ -2243,7 +2243,7 @@ AcDbLayerTableRecord
   2
 Water - Taps
  70
-     5
+     4
  62
      5
 420
@@ -2299,7 +2299,7 @@ AcDbLayerTableRecord
   2
 Fence (Heras)
  70
-     0
+     4
  62
      6
 420
@@ -2327,7 +2327,7 @@ AcDbLayerTableRecord
   2
 Trees
  70
-     5
+     4
  62
     96
 420
@@ -2355,7 +2355,7 @@ AcDbLayerTableRecord
   2
 Installations
  70
-     5
+     4
  62
      2
 420
@@ -2467,7 +2467,7 @@ AcDbLayerTableRecord
   2
 Lighting - Festoon
  70
-     5
+     4
  62
      2
 420
@@ -2523,7 +2523,7 @@ AcDbLayerTableRecord
   2
 Water - Buried Pipes
  70
-     5
+     4
  62
    176
 420
@@ -2719,7 +2719,7 @@ AcDbLayerTableRecord
   2
 Water - Standpipes
  70
-     5
+     4
  62
    176
 420
@@ -2831,7 +2831,7 @@ AcDbLayerTableRecord
   2
 Water - Pipes
  70
-     5
+     4
  62
      5
 420
@@ -2859,7 +2859,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo
  70
-     4
+     0
  62
    178
 420
@@ -2887,7 +2887,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo radius
  70
-     4
+     0
  62
      4
 420
@@ -2999,7 +2999,7 @@ AcDbLayerTableRecord
   2
 Areas - Camping
  70
-     0
+     4
  62
     56
 420
@@ -47484,6 +47484,12 @@ Datenklo
 146880.0
  30
 0.0
+1001
+QCAD
+1000
+DK_Name:A1
+1000
+asdf:fdsa
   0
 INSERT
   5
@@ -47504,6 +47510,10 @@ Datenklo
 146813.0369709132
  30
 0.0
+1001
+QCAD
+1000
+DK_Name:A2
   0
 INSERT
   5
