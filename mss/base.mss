@@ -45,7 +45,7 @@
     line-width: 1;
 }
 
-#labels, #tents, #installations, #buildings {
+#labels, #tents, #installations, #buildings, #toilets {
     text-name: "[text]";
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
@@ -153,3 +153,10 @@
     polygon-smooth: 0.1;
 }
 
+#toilets {
+    line-color: blue;
+    line-width: 1;
+    text-size: 12;
+    text-face-name: @bold-font;
+    text-halo-radius: 2;
+}
