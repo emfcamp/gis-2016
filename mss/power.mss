@@ -5,7 +5,7 @@
     line-width: 1;
 }
 
-#power_125_3, #power_63_3, #power_32_3 #power_32_1 {
+#power_125_3, #power_63_3, #power_32_3 {
     text-size: 11;
     text-fill: red;
     text-placement: line;
