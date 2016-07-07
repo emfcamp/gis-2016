@@ -54,6 +54,7 @@
     text-name: "[power_distro]";
 
     [power_distro="TOB32"],
+        [power_distro="TOB16"],
         [power_distro="SOB"] {
         marker-fill: blue;
         text-fill: blue;
