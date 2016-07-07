@@ -5,7 +5,7 @@
     line-width: 1;
 }
 
-#power_125_3, #power_63_3, #power_32_3 {
+#power_125_3, #power_63_3, #power_32_3 #power_32_1 {
     text-size: 11;
     text-fill: red;
     text-placement: line;
@@ -32,4 +32,10 @@
     line-color: red;
     line-width: 1;
     text-name: "'32A 3ph ('  + [line_length] + 'm)'";
+}
+
+#power_32_1 {
+    line-color: blue;
+    line-width: 1;
+    text-name: "'32A 1ph ('  + [line_length] + 'm)'";
 }
