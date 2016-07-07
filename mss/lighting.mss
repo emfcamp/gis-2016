@@ -8,8 +8,8 @@
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
     text-halo-fill: rgba(255,255,255,0.6);
-    line-color: yellow;
-    line-width: 3;
-    text-fill: yellow;
+    line-color: #C8B82A;
+    line-width: 2;
+    text-fill: #C8B82A;
     text-name: "'Festoon (' + [line_length] + 'm)'";
 }
