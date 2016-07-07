@@ -5,7 +5,7 @@
     line-width: 1;
 }
 
-#power_125_3, #power_63_3, #power_32_3, #power_32_1 {
+#power_125_3, #power_63_3, #power_32_3, #power_32_1, #power_16_1 {
     text-size: 9;
     text-placement: line;
     text-dy: 10;
@@ -41,6 +41,13 @@
     line-width: 1;
     text-fill: blue;
     text-name: "'32A ('  + [line_length] + 'm)'";
+}
+
+#power_16_1 {
+    line-color: blue;
+    line-width: 0.5;
+    text-fill: blue;
+    text-name: "'16A ('  + [line_length] + 'm)'";
 }
 
 #power_distro {
