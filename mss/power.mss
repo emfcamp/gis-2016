@@ -19,28 +19,28 @@
     line-color: red;
     line-width: 3;
     text-fill: red;
-    text-name: "'125A 3ph (' + [line_length] + 'm)'";
+    text-name: "'125A (' + [line_length] + 'm)'";
 }
 
 #power_63_3 {
     line-color: red;
     line-width: 2;
     text-fill: red;
-    text-name: "'63A 3ph (' + [line_length] + 'm)'";
+    text-name: "'63A (' + [line_length] + 'm)'";
 }
 
 #power_32_3 {
     line-color: red;
     line-width: 1;
     text-fill: red;
-    text-name: "'32A 3ph ('  + [line_length] + 'm)'";
+    text-name: "'32A ('  + [line_length] + 'm)'";
 }
 
 #power_32_1 {
     line-color: blue;
     line-width: 1;
     text-fill: blue;
-    text-name: "'32A 1ph ('  + [line_length] + 'm)'";
+    text-name: "'32A ('  + [line_length] + 'm)'";
 }
 
 #power_distro {
@@ -52,9 +52,10 @@
     text-halo-fill: rgba(255,255,255,0.6);
     text-fill: red;
     text-name: "[power_distro]";
-}
 
-#power_distro[power_distro="TOB32"] {
-    marker-fill: blue;
-    text-fill: blue;
+    [power_distro="TOB32"],
+        [power_distro="SOB"] {
+        marker-fill: blue;
+        text-fill: blue;
+    }
 }
