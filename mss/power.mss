@@ -16,6 +16,17 @@
     text-halo-fill: rgba(255,255,255,0.6);
 }
 
+#power_32_1 {
+    text-size: 11;
+    text-fill: blue;
+    text-placement: line;
+    text-dy: 12;
+    text-face-name: @normal-font;
+    text-vertical-alignment: middle;
+    text-horizontal-alignment: middle;
+    text-halo-fill: rgba(255,255,255,0.6);
+}
+
 #power_125_3 {
     line-color: red;
     line-width: 3;
