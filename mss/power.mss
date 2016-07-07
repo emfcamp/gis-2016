@@ -5,20 +5,8 @@
     line-width: 1;
 }
 
-#power_125_3, #power_63_3, #power_32_3 {
+#power_125_3, #power_63_3, #power_32_3, #power_32_1 {
     text-size: 11;
-    text-fill: red;
-    text-placement: line;
-    text-dy: 12;
-    text-face-name: @normal-font;
-    text-vertical-alignment: middle;
-    text-horizontal-alignment: middle;
-    text-halo-fill: rgba(255,255,255,0.6);
-}
-
-#power_32_1 {
-    text-size: 11;
-    text-fill: blue;
     text-placement: line;
     text-dy: 12;
     text-face-name: @normal-font;
@@ -30,23 +18,27 @@
 #power_125_3 {
     line-color: red;
     line-width: 3;
+    text-fill: red;
     text-name: "'125A 3ph (' + [line_length] + 'm)'";
 }
 
 #power_63_3 {
     line-color: red;
     line-width: 2;
+    text-fill: red;
     text-name: "'63A 3ph (' + [line_length] + 'm)'";
 }
 
 #power_32_3 {
     line-color: red;
     line-width: 1;
+    text-fill: red;
     text-name: "'32A 3ph ('  + [line_length] + 'm)'";
 }
 
 #power_32_1 {
     line-color: blue;
     line-width: 1;
+    text-fill: blue;
     text-name: "'32A 1ph ('  + [line_length] + 'm)'";
 }
