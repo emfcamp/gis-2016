@@ -19,17 +19,17 @@
 #power_125_3 {
     line-color: red;
     line-width: 3;
-    text-name: "'125A 3ph'";
+    text-name: "'125A 3ph (' + [line_length] + 'm)'";
 }
 
 #power_63_3 {
     line-color: red;
     line-width: 2;
-    text-name: "'63A 3ph'";
+    text-name: "'63A 3ph (' + [line_length] + 'm)'";
 }
 
 #power_32_3 {
     line-color: red;
     line-width: 1;
-    text-name: "'32A 3ph'";
+    text-name: "'32A 3ph ('  + [line_length] + 'm)'";
 }
