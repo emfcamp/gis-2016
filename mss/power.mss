@@ -6,9 +6,9 @@
 }
 
 #power_125_3, #power_63_3, #power_32_3, #power_32_1 {
-    text-size: 11;
+    text-size: 9;
     text-placement: line;
-    text-dy: 12;
+    text-dy: 10;
     text-face-name: @normal-font;
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
@@ -41,4 +41,20 @@
     line-width: 1;
     text-fill: blue;
     text-name: "'32A 1ph ('  + [line_length] + 'm)'";
+}
+
+#power_distro {
+    marker-fill: red;
+    marker-width: 8;
+    marker-height: 8;
+    text-size: 11;
+    text-face-name: @normal-font;
+    text-halo-fill: rgba(255,255,255,0.6);
+    text-fill: red;
+    text-name: "[power_distro]";
+}
+
+#power_distro[power_distro="TOB32"] {
+    marker-fill: blue;
+    text-fill: blue;
 }
