@@ -1,26 +1,39 @@
 @normal-font: 'Arial Regular';
 
-#noc_datenklo {
+#noc_uplink, #noc_fiber, #noc_cat5e, #noc_cat5e_cca {
+    text-size: 9;
+    text-placement: line;
+    text-dy: 10;
+    text-face-name: @normal-font;
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
     text-halo-fill: rgba(255,255,255,0.6);
 }
 
-#noc_datenklo {
-    line-color: #888;
-    line-width: 1;
-    text-name: "[dk_name]";
-    text-size: 14;
-    text-face-name: @normal-font;
-    text-halo-radius: 2;
-}
-
-#noc_datenklo_radius {
-    line-color: #22e;
-    line-width: 1;
-}
-
 #noc_uplink {
     line-color: #792A7C;
     line-width: 2;
+    text-fille: #792A7C;
+    test-name: "'Uplink (' + [line_length] + 'm)'";
+}
+
+#noc_fiber {
+    line-color: #935496;
+    line-width: 2;
+    text-fille: #935496;
+    test-name: "'Fiber (' + [line_length] + 'm)'";
+}
+
+#noc_cat5e {
+    line-color: #ae7fb0;
+    line-width: 2;
+    text-fille: #ae7fb0;
+    test-name: "'Cat5e (' + [line_length] + 'm)'";
+}
+
+#noc_cat5e_cca {
+    line-color: #c9a9ca;
+    line-width: 2;
+    text-fille: #c9a9ca;
+    test-name: "'CCA (' + [line_length] + 'm)'";
 }
