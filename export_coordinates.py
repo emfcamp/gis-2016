@@ -170,32 +170,28 @@ def getLatLongForEntity(entity):
 
 def writeKMLCSV(filename, places):
     # open kml can csv to write to 
-    kml = open("export/" + filename + '.kml', 'w')
-    csv = open("export/" + filename + '.csv', 'w')
+    with open("export/" + filename + '.kml', 'w') as kml, open("export/" + filename + '.csv', 'w') as csvfile:
+        # kml headers
+        kml.write('<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>\n');
 
-    # kml headers
-    kml.write('<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>\n');
+        # csv headers
+        fieldnames = ['name', 'lat', 'lon']
+        for key in places[0].iterkeys() :
+            if not(key in fieldnames):
+                fieldnames.append(key)
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
 
-    # csv headers
-    csv.write('Name,Lat,Long\n')
+        for point in places:
+            # kml point
+            kml.write('<Placemark><name>' + point['name'] + '</name>');
+            kml.write('<Point><coordinates>' + str(point['lon']) + ',' + str(point['lat']) + ',0</coordinates></Point></Placemark>\n');
 
-    for point in places:
-        # kml point
-        # print name
-        # print coordinates
-        kml.write('<Placemark><name>' + point['name'] + '</name>');
-        kml.write('<Point><coordinates>' + str(point['lon']) + ',' + str(point['lat']) + ',0</coordinates></Point></Placemark>\n');
+            # csv point
+            writer.writerow(point)
 
-        # csv point
-        csv.write('"' + point['name'] + '","' + str(point['lat']) + '","' + str(point['lon']) + '"\n')
-
-    # kml footer
-    kml.write('</Document></kml>');
-
-    # close files
-    kml.close()
-    csv.close()
-
+        # kml footer
+        kml.write('</Document></kml>');
 
 dxf = ezdxf.readfile("site-plan.dxf")
 print("DXF version: {}".format(dxf.dxfversion))
