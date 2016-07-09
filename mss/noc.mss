@@ -37,3 +37,22 @@
     text-fill: #c9a9ca;
     text-name: "'CCA (' + [line_length] + 'm)'";
 }
+
+#noc_switch, #noc_ap {
+    marker-width: 8;
+    marker-height: 8;
+    text-size: 11;
+    text-face-name: @normal-font;
+    text-halo-fill: rgba(255,255,255,0.6);
+    text-name: "[emfnet]";
+}
+
+#noc_switch {
+    marker-fill: indigo;
+    text-fill: indigo;
+}
+
+#noc_ap {
+    marker-fill: darkviolet;
+    text-fill: darkviolet; 
+}
