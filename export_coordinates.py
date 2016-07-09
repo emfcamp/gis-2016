@@ -166,7 +166,7 @@ def getLatLongForEntity(entity):
     else: 
         location = entity.get_dxf_attrib('location')
     lat, lon = OSGB36toWGS84(location[0], location[1])
-    return (lat, lon)
+    return {'lat': lat, 'lon': lon}
 
 def writeKMLCSV(filename, places):
     # open kml can csv to write to 
@@ -174,20 +174,20 @@ def writeKMLCSV(filename, places):
     csv = open("export/" + filename + '.csv', 'w')
 
     # kml headers
-    kml.write('<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>');
+    kml.write('<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>\n');
 
     # csv headers
     csv.write('Name,Lat,Long\n')
 
-    for name, coordinates in places.iteritems():
+    for point in places:
         # kml point
-        print name
-        print coordinates
-        kml.write('<Placemark><name>' + name + '</name>');
-        kml.write('<Point><coordinates>' + str(coordinates[1]) + ',' + str(coordinates[0]) + ',0</coordinates></Point></Placemark>');
+        # print name
+        # print coordinates
+        kml.write('<Placemark><name>' + point['name'] + '</name>');
+        kml.write('<Point><coordinates>' + str(point['lon']) + ',' + str(point['lat']) + ',0</coordinates></Point></Placemark>\n');
 
         # csv point
-        csv.write('"' + name + '","' + str(coordinates[0]) + '","' + str(coordinates[1]) + '"\n')
+        csv.write('"' + point['name'] + '","' + str(point['lat']) + '","' + str(point['lon']) + '"\n')
 
     # kml footer
     kml.write('</Document></kml>');
@@ -200,36 +200,66 @@ def writeKMLCSV(filename, places):
 dxf = ezdxf.readfile("site-plan.dxf")
 print("DXF version: {}".format(dxf.dxfversion))
 
-Datenklo = dict()
-PowerDist = dict()
-NOC = dict()
-Paths = dict()
-Festoon = dict()
-Tents = dict()
+Datenklo = []
+PowerDist = []
+NOC = []
+Paths = []
+Festoon = []
+Tents = []
 
 for entity in dxf.modelspace():
     # get layer based stuff first
-     
+    # print(type(entity))
+    layer = entity.dxf.layer
     
-    # tag based stuff 
-    for tag in entity.tags:
-        if tag.code == 1000:
-            if tag.value.startswith("DK_Name"):
-                match = re.match(r'^DK_Name:(.*)$', tag.value)
-                Datenklo[match.group(1)] = getLatLongForEntity(entity)
-            elif tag.value.startswith("distro_name"):
-                match = re.match(r'^distro_name:(.*)$', tag.value)
-                PowerDist[match.group(1)] = getLatLongForEntity(entity)
-            elif tag.value.startswith("emfnet"):
-                match = re.match(r'^emfnet:(.*)$', tag.value)
-                NOC[match.group(1)] = getLatLongForEntity(entity)
+    if (layer == "Paths - Euromat" or layer == "Paths - Fire Lane") and type(entity) == ezdxf.modern.graphics.Line:
+        pass
+    elif layer == "Lighting - Festoon" and type(entity) == ezdxf.modern.graphics.Line:
+        pass
+    # elif layer == "Tents" and type(entity) == ezdxf.modern.graphics.Insert:
+    #     # pprint(entity.get_dxf_attrib('name'))
+    #     # for tag in entity.tags:
+    #     #     pprint(tag)
+    #     Tents[entity.get_dxf_attrib('name')] =  getLatLongForEntity(entity)
+    #     Tents[name][type] = entity.get_dxf_attrib('name')
+    else:
+        # tag based stuff 
+        for tag in entity.tags:
+            if tag.code == 1000:
+                if tag.value.startswith("DK_Name"):
+                    match = re.match(r'^DK_Name:(.*)$', tag.value)
+                    dk = {'name': match.group(1)}
+                    dk.update(getLatLongForEntity(entity))
+                    Datenklo.append(dk)
+                elif tag.value.startswith("distro_name"):
+                    match = re.match(r'^distro_name:(.*)$', tag.value)
+                    pd = {"name": match.group(1)}
+                    pd.update(getLatLongForEntity(entity))
+                    for t in entity.tags:
+                        if t.code == 1000:
+                            if t.value.startswith("power_distro"):
+                                pd['type'] = re.match(r'^power_distro:(.*)$', t.value).group(1)
+                    PowerDist.append(pd)
+                    
+                elif tag.value.startswith("emfnet"):
+                    match = re.match(r'^emfnet:(.*)$', tag.value)
+                    ap = {"name": match.group(1)}
+                    ap.update(getLatLongForEntity(entity))
+                    NOC.append(ap)
+                elif tag.value.startswith("Tent"):
+                    match = re.match(r'^Tent:(.*)$', tag.value)
+                    tent = {"name": match.group(1)}
+                    tent.update(getLatLongForEntity(entity))
+                    tent['type'] = entity.dxf.name
+                    Tents.append(tent)
+
             
 writeKMLCSV('Datenklo', Datenklo)
 writeKMLCSV('PowerDist', PowerDist)
 writeKMLCSV('NOC', NOC)
 # writeKMLCSV('Paths', Paths)
 # writeKMLCSV('Festoon', Festoon)
-# writeKMLCSV('Tents', Tents)
+writeKMLCSV('Tents', Tents)
 
 
 pprint(Datenklo)
@@ -237,4 +267,4 @@ pprint(PowerDist)
 pprint(NOC)
 # pprint(Paths)
 # pprint(Festoon)
-# pprint(Tents)
+pprint(Tents)
