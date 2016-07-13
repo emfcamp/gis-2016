@@ -54,11 +54,16 @@
     marker-fill: red;
     marker-width: 8;
     marker-height: 8;
-    text-size: 11;
+    text-size: 10;
     text-face-name: @normal-font;
-    text-halo-fill: rgba(255,255,255,0.6);
+    text-halo-fill: rgba(255,255,255,0.9);
     text-fill: red;
-    text-name: "[power_distro]";
+    text-dx: 10;
+    text-name: "[power_distro] + ': ' + [distro_name]";
+    text-allow-overlap: true;
+    text-placement-type: simple;
+    text-placements:"E,NE,W,S,11";
+    text-label-position-tolerance:5;
 
     [power_distro="TOB32"],
         [power_distro="TOB16"],
