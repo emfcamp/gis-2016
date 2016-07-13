@@ -12,6 +12,7 @@
     text-face-name: @normal-font;
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
+    text-halo-radius: 2;
     text-halo-fill: rgba(255,255,255,0.6);
 }
 
@@ -56,7 +57,8 @@
     marker-height: 8;
     text-size: 10;
     text-face-name: @normal-font;
-    text-halo-fill: rgba(255,255,255,0.9);
+    text-halo-radius: 2;
+    text-halo-fill: rgba(255,255,255,0.8);
     text-fill: red;
     text-dx: 10;
     text-name: "[power_distro] + ': ' + [distro_name]";
