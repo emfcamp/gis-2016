@@ -51,7 +51,7 @@
     text-name: "'16A ('  + [line_length] + 'm)'";
 }
 
-#power_distro {
+#power_distro [zoom > 18] {
     marker-fill: red;
     marker-width: 8;
     marker-height: 8;
@@ -61,10 +61,10 @@
     text-halo-fill: rgba(255,255,255,0.8);
     text-fill: red;
     text-dx: 10;
-    text-name: "[power_distro] + ': ' + [distro_name]";
-    text-allow-overlap: true;
+    text-name: "[distro_name] + ' (' + [power_distro] + ')'";
+    text-allow-overlap: false;
     text-placement-type: simple;
-    text-placements:"E,NE,W,S,11";
+    text-placements:"N,E,W,S,11";
     text-label-position-tolerance:5;
 
     [power_distro="TOB32"],

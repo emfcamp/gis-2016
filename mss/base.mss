@@ -45,17 +45,25 @@
     line-width: 1;
 }
 
-#labels, #tents, #installations, #buildings, #toilets {
+#labels, #tents, #installations, #buildings, #toilets, #villages {
     text-name: "[text]";
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
-    text-halo-fill: rgba(255,255,255,0.6);
+    text-halo-fill: rgba(255,255,255,0.7);
 }
 
 #labels {
     text-size: 14;
     text-face-name: @bold-font;
-    text-halo-radius: 2;
+    text-halo-radius: 3;
+}
+
+#villages [zoom > 17] {
+    text-size: 11;
+    text-face-name: @normal-font;
+    text-halo-radius: 1;
+    text-wrap-width: 50;
+    text-wrap-before: true;
 }
 
 #tents {
