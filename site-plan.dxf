@@ -489,19 +489,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2457583.764513889
+2457583.791759259
   9
 $TDUCREATE
  40
-2457583.764513889
+2457583.791759259
   9
 $TDUPDATE
  40
-2457583.764525463
+2457583.791759259
   9
 $TDUUPDATE
  40
-2457583.764525463
+2457583.791759259
   9
 $TDINDWG
  40
@@ -929,7 +929,7 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{51A76E49-14DB-4EF2-B56E-EE780CC42D78}
+{7E8241D0-3AD6-4608-A10B-B951E59EAFEB}
   9
 $VERSIONGUID
   2
@@ -2411,7 +2411,7 @@ AcDbLayerTableRecord
   2
 Power - 125-3
  70
-     5
+     4
  62
     16
 420
@@ -2467,7 +2467,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo
  70
-     5
+     4
  62
    178
 420
@@ -2523,7 +2523,7 @@ AcDbLayerTableRecord
   2
 Power - 32-3
  70
-     5
+     4
  62
     30
 420
@@ -2579,7 +2579,7 @@ AcDbLayerTableRecord
   2
 Power - Distro
  70
-     5
+     0
  62
    178
 420
@@ -2607,7 +2607,7 @@ AcDbLayerTableRecord
   2
 Power - 63-3
  70
-     5
+     4
  62
      1
 420
@@ -2971,7 +2971,7 @@ AcDbLayerTableRecord
   2
 Power - 32-1
  70
-     5
+     4
  62
     31
 420
@@ -3139,7 +3139,7 @@ AcDbLayerTableRecord
   2
 Power - 16-1
  70
-     5
+     4
  62
     51
 420
@@ -56339,9 +56339,9 @@ AcDbBlockReference
   2
 Tent (3x3)
  10
-497206.0
+497217.0
  20
-146892.0
+146885.0
  30
 0.0
   0
@@ -56357,9 +56357,9 @@ Villages
 100
 AcDbText
  10
-497198.7657546759
+497209.2619047619
  20
-146889.8457283158
+146883.0
  30
 0.0
  40
@@ -56371,9 +56371,9 @@ textstyle58
  72
      1
  11
-497206.503849914
+497217.0
  21
-146890.8457283158
+146884.0
  31
 0.0
 100
