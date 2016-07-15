@@ -489,19 +489,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2457584.808773148
+2457585.082581019
   9
 $TDUCREATE
  40
-2457584.808773148
+2457585.082581019
   9
 $TDUPDATE
  40
-2457584.808773148
+2457585.082581019
   9
 $TDUUPDATE
  40
-2457584.808773148
+2457585.082581019
   9
 $TDINDWG
  40
@@ -929,7 +929,7 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{57509C4E-0627-0142-B6FD-067E6A34B3B6}
+{35CD5728-2898-47F1-6E63-57E85F0EB4B6}
   9
 $VERSIONGUID
   2
@@ -1297,9 +1297,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-497361.5905115099
+497378.5492851047
  22
-146765.3983112696
+146663.7658848823
  13
 0.0
  23
@@ -1325,9 +1325,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-29.49666652840097
+102.1269067794201
  41
-1.32676056337977
+1.326760563380005
  42
 50.0
  43
@@ -4135,7 +4135,7 @@ AcDbLayerTableRecord
   2
 Villages
  70
-     4
+     0
  62
    116
 420
@@ -4219,7 +4219,7 @@ AcDbLayerTableRecord
   2
 Tents
  70
-     4
+     0
  62
    136
 420
@@ -4499,7 +4499,7 @@ AcDbLayerTableRecord
   2
 Tents - Guy Ropes
  70
-     4
+     5
  62
    136
 420
@@ -4583,7 +4583,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo radius
  70
-     4
+     0
  62
      4
 420
@@ -39057,7 +39057,9 @@ MS MiniSwirl
 1001
 QCAD
 1000
-Tent:Stage A
+Tent:Stage_A
+1000
+tent_size:MS_MiniSwirl
   0
 TEXT
   5
@@ -39477,7 +39479,9 @@ Tent (15x24)
 1001
 QCAD
 1000
-Tent:Stage C
+Tent:Stage_C
+1000
+tent_size:15x24
   0
 TEXT
   5
@@ -39612,6 +39616,8 @@ Tent (6x9)
 QCAD
 1000
 Tent:Info
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -39709,7 +39715,9 @@ Tent (3x6)
 1001
 QCAD
 1000
-Tent:Green Room
+Tent:Green_Room
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -39772,6 +39780,8 @@ Tent (9x12)
 QCAD
 1000
 Tent:Volunteer
+1000
+tent_size:9x12
   0
 TEXT
   5
@@ -39875,7 +39885,9 @@ Tent (6x9)
 1001
 QCAD
 1000
-Tent:Kid 2
+Tent:Kids_Workshop
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -40042,6 +40054,8 @@ Tent (3x6)
 QCAD
 1000
 Tent:Entrance
+1000
+tent_size:3x6
   0
 LINE
   5
@@ -48181,7 +48195,9 @@ Tent (9x9)
 1001
 QCAD
 1000
-Tent:Kids 1
+Tent:Kids_1
+1000
+tent_size:9x9
   0
 INSERT
   5
@@ -48208,6 +48224,8 @@ Tent (15x15)
 QCAD
 1000
 Tent:Bar
+1000
+tent_size:15x15
   0
 INSERT
   5
@@ -48234,6 +48252,8 @@ MS Tent (13x20)
 QCAD
 1000
 Tent:Lounge
+1000
+tent_size:MS_13x20
   0
 TEXT
   5
@@ -48296,6 +48316,8 @@ Cold Room (4.8x4.8)
 QCAD
 1000
 Tent:Cold Room
+1000
+tent_size:4.8x4.8
   0
 TEXT
   5
@@ -48575,7 +48597,9 @@ MS Marooned 16x26
 1001
 QCAD
 1000
-Tent:Stage B
+Tent:Stage_B
+1000
+tent_size:MS_Marooned_16x26
   0
 POINT
   5
@@ -48746,6 +48770,8 @@ Cabin 2.4x7.3
 QCAD
 1000
 Tent:HQ
+1000
+tent_size:Cabin_2.4x7.3
   0
 INSERT
   5
@@ -48772,6 +48798,8 @@ Cabin 2.4x7.3
 QCAD
 1000
 Tent:NOC
+1000
+tent_size:Cabin_2.4x7.3
   0
 INSERT
   5
@@ -48934,6 +48962,8 @@ Tent (6x9)
 QCAD
 1000
 Tent:Badge
+1000
+tent_size:6x9
   0
 INSERT
   5
@@ -49109,7 +49139,9 @@ Tent (3x6)
 1001
 QCAD
 1000
-Tent:Nottinghack 1
+Tent:Nottinghack_1
+1000
+tent_size:6x9
   0
 INSERT
   5
@@ -49135,7 +49167,9 @@ Tent (3x6)
 1001
 QCAD
 1000
-Tent:Nottinghack 2
+Tent:Nottinghack_2
+1000
+tent_size:6x9
   0
 LINE
   5
@@ -52697,7 +52731,7 @@ QCAD
 1000
 distro_name:A1
 1000
-power_distro:EPS32-3
+power_distro:EPS63-3
   0
 POINT
   5
@@ -53223,7 +53257,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_B
+distro_name:Arcade_B
 1000
 power_distro:TOB32
   0
@@ -53271,7 +53305,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_C
+distro_name:Arcade_C
 1000
 power_distro:TOB32
   0
@@ -53295,7 +53329,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_D
+distro_name:Arcade_D
 1000
 power_distro:TOB32
   0
@@ -53319,7 +53353,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_A
+distro_name:Arcade_A
 1000
 power_distro:TOB32
   0
@@ -53343,7 +53377,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_Dist
+distro_name:Arcade_Dist
 1000
 power_distro:EPS63-3
   0
@@ -53367,7 +53401,7 @@ AcDbPoint
 1001
 QCAD
 1000
-distro_name:Retrogamming_E
+distro_name:Arcade_E
 1000
 power_distro:TOB32
   0
@@ -57145,7 +57179,9 @@ Tent (6x6)
 1001
 QCAD
 1000
-Tent:Haxors of the roses
+Tent:Haxors_of_the_roses
+1000
+tent_size:6x6
   0
 LINE
   5
@@ -57244,6 +57280,8 @@ Tent (6x9)
 QCAD
 1000
 Tent:Workshop 2
+1000
+tent_size:6x9
   0
 INSERT
   5
@@ -57267,7 +57305,9 @@ Tent (6x9)
 1001
 QCAD
 1000
-Tent:Workshop 1
+Tent:Workshop_1
+1000
+tent_size:6x9
   0
 LINE
   5
@@ -57600,6 +57640,12 @@ Tention Stretch Tent 10x16
 146707.5179274951
  30
 0.0
+1001
+QCAD
+1000
+Tent:Spillout
+1000
+tent_size:Stretch_10x16
   0
 INSERT
   5
@@ -57952,6 +57998,12 @@ Tent (6x9)
 146963.9
  30
 0.0
+1001
+QCAD
+1000
+Tent:Kids_2
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -58304,6 +58356,12 @@ Tent (9x15)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Vendors/Hack_center
+1000
+tent_size:9x15
   0
 INSERT
   5
@@ -58326,6 +58384,12 @@ Tent (9x24)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Arcade
+1000
+tent_size:9x24
   0
 INSERT
   5
@@ -58348,6 +58412,12 @@ Tent (6x6)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:FirstAid
+1000
+tent_size:6x6
   0
 TEXT
   5
@@ -58404,6 +58474,12 @@ Tent (3x3)
 146887.0
  30
 0.0
+1001
+QCAD
+1000
+Tent:The_Hacking_Hamlet
+1000
+tent_size:3x3
   0
 TEXT
   5
@@ -58460,6 +58536,12 @@ Tent (3x6)
 146820.0
  30
 0.0
+1001
+QCAD
+1000
+Tent:Sympa'thé
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -58516,6 +58598,12 @@ Tent (3x6)
 146805.226380113
  30
 0.0
+1001
+QCAD
+1000
+Tent:The_Maths_Village
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -58574,6 +58662,12 @@ Tent (3x6)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Camp_Holland
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -58632,6 +58726,12 @@ Tent (6x6)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Just_Add_Sharks
+1000
+tent_size:6x6
   0
 TEXT
   5
@@ -58690,6 +58790,12 @@ Tent (6x9)
 0.0
  50
 300.0
+1001
+QCAD
+1000
+Tent:Algorave
+1000
+tent_size:9x6
   0
 TEXT
   5
@@ -58784,6 +58890,12 @@ Tent (9x15)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+9x15:
+1000
+Tent:Security_Stage
   0
 INSERT
   5
@@ -58806,6 +58918,12 @@ Tent (3x6)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Nexmo
+1000
+tent_size:6x9
   0
 TEXT
   5
@@ -58864,6 +58982,12 @@ Tent (3x3)
 0.0
  50
 30.0
+1001
+QCAD
+1000
+Tent:Irish_Embassy
+1000
+tent_size:3x3
   0
 TEXT
   5
@@ -59081,15 +59205,15 @@ Power - 32-1
 100
 AcDbLine
  10
-497441.0140564878
+497439.0
  20
-146940.2782088599
+146938.0
  30
 0.0
  11
-497395.0140564878
+497393.0
  21
-146951.2782088599
+146949.0
  31
 0.0
   0
@@ -70127,7 +70251,7 @@ AcDbXrecord
 280
      1
  40
-29.49666652840097
+102.1269067794201
   0
 XRECORD
   5
@@ -70145,7 +70269,7 @@ AcDbXrecord
 280
      1
  40
-39.13501390104648
+135.4979523749207
   0
 DICTIONARY
   5
