@@ -489,19 +489,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2457585.093738426
+2457585.099872685
   9
 $TDUCREATE
  40
-2457585.093738426
+2457585.099872685
   9
 $TDUPDATE
  40
-2457585.093738426
+2457585.099872685
   9
 $TDUUPDATE
  40
-2457585.093738426
+2457585.099872685
   9
 $TDINDWG
  40
@@ -929,7 +929,7 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{019230A6-F357-36A8-614D-569EEAC56839}
+{E21A6E4D-B659-CD1B-EBC5-181A8ADA1A1F}
   9
 $VERSIONGUID
   2
@@ -1297,9 +1297,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-497278.8635377937
+497364.4080524738
  22
-146839.3065977675
+146791.9984772904
  13
 0.0
  23
@@ -1325,9 +1325,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-36.91706237336621
+138.7489190583001
  41
-1.326760563380006
+1.326760563379983
  42
 50.0
  43
@@ -3575,7 +3575,7 @@ AcDbLayerTableRecord
   2
 Power - 32-3
  70
-     0
+     4
  62
     30
 420
@@ -3631,7 +3631,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo
  70
-     0
+     4
  62
    178
 420
@@ -3715,7 +3715,7 @@ AcDbLayerTableRecord
   2
 Power - 63-3
  70
-     0
+     4
  62
      1
 420
@@ -3743,7 +3743,7 @@ AcDbLayerTableRecord
   2
 Power - Distro
  70
-     0
+     4
  62
    178
 420
@@ -4023,7 +4023,7 @@ AcDbLayerTableRecord
   2
 Power - 32-1
  70
-     0
+     4
  62
     31
 420
@@ -4135,7 +4135,7 @@ AcDbLayerTableRecord
   2
 Villages
  70
-     0
+     4
  62
    116
 420
@@ -4163,7 +4163,7 @@ AcDbLayerTableRecord
   2
 Power - Generator
  70
-     0
+     4
  62
      6
 420
@@ -4303,7 +4303,7 @@ AcDbLayerTableRecord
   2
 Power - 16-1
  70
-     0
+     4
  62
     51
 420
@@ -4583,7 +4583,7 @@ AcDbLayerTableRecord
   2
 NOC - Datenklo radius
  70
-     0
+     4
  62
      4
 420
@@ -4639,7 +4639,7 @@ AcDbLayerTableRecord
   2
 Power - 125-3
  70
-     0
+     4
  62
     16
 420
@@ -58563,7 +58563,7 @@ Tent (3x6)
 1001
 QCAD
 1000
-Tent:Sympa'thé
+Tent:Sympa_the
 1000
 tent_size:6x9
   0
@@ -58917,9 +58917,9 @@ Tent (9x15)
 1001
 QCAD
 1000
-9x15:
-1000
 Tent:Security_Stage
+1000
+tent_size:9x15
   0
 INSERT
   5
@@ -70275,7 +70275,7 @@ AcDbXrecord
 280
      1
  40
-36.91706237336621
+138.7489190583001
   0
 XRECORD
   5
@@ -70293,7 +70293,7 @@ AcDbXrecord
 280
      1
  40
-48.98010247282218
+184.0865940181538
   0
 DICTIONARY
   5
