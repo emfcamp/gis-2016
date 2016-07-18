@@ -69,7 +69,9 @@
 
     [power_distro="TOB32"],
         [power_distro="TOB16"],
-        [power_distro="SOB"] {
+        [power_distro="SOB"],
+        [power_distro="PortaCabin"],
+        [power_distro="ColdRoom"] {
         marker-fill: blue;
         text-fill: blue;
     }
