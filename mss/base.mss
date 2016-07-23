@@ -45,7 +45,7 @@
     line-width: 1;
 }
 
-#labels, #tents, #installations, #buildings, #toilets, #villages {
+#labels, #tents, #installations, #buildings, #villages {
     text-name: "[text]";
     text-vertical-alignment: middle;
     text-horizontal-alignment: middle;
@@ -114,9 +114,10 @@
 }
 
 #water_taps {
+    marker-file: url(markers/water.svg);
     marker-fill: blue;
-    marker-width: 10;
-    marker-height: 10;
+    marker-width: 25;
+    marker-height: 25;
 }
 
 #trees {
@@ -162,10 +163,9 @@
     polygon-smooth: 0.1;
 }
 
-#toilets {
-    line-color: blue;
-    line-width: 1;
-    text-size: 12;
-    text-face-name: @bold-font;
-    text-halo-radius: 2;
+#toilets[text='WC'] {
+    marker-file: url(markers/toilet.svg);
+    marker-fill: blue;
+    marker-width: 25;
+    marker-height: 25;
 }
