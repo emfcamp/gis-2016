@@ -58,7 +58,7 @@
     text-halo-radius: 3;
 }
 
-#villages [zoom > 17] {
+#villages [zoom > 18] {
     text-size: 11;
     text-face-name: @normal-font;
     text-halo-radius: 1;
@@ -69,19 +69,20 @@
 #tents {
     [zoom > 17] {
         text-size: 11;
+        text-color: #4E3F7C;
         text-face-name: @normal-font;
         text-halo-radius: 1;
         text-wrap-width: 50;
         text-wrap-before: true;
     }
-    line-color: #171123;
+    line-color: #4E3F7C;
     line-width: 1;
 }
 
 #tents[text=~ "(Stage .*|Lounge|Bar)"] {
     text-face-name: @bold-font;
     text-size: 14;
-    text-halo-radius: 2;
+    text-halo-radius: 3;
 }
 
 #buildings {
