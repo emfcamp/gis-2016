@@ -76,7 +76,7 @@
         text-wrap-before: true;
     }
     line-color: #4E3F7C;
-    line-width: 1;
+    line-width: 1.5;
 }
 
 #tents[text=~ "(Stage .*|Lounge|Bar)"] {
