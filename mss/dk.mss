@@ -18,4 +18,5 @@
 #noc_datenklo_radius {
     line-color: #22e;
     line-width: 1;
+    line-opacity: 0.5;
 }
