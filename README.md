@@ -9,14 +9,3 @@ of QCad will get rid of the extended attributes, even if you don't edit
 the entities with them attached.
 
 Please ask Russ before making edits - DXF files don't merge cleanly.
-
-
-## Exporting Coordinates to KML and CSV
-export_coordinate.py can be used to auto generate KML and CSV files with 
-lat, long for several type of data. 
-
-Python just needs exdxf installed
-```
-pip install ezdxf
-./export_coordinates.py
-```
