@@ -1,0 +1,24 @@
+Power:
+  - Power - 16-1
+  - Power - 32-1
+  - Power - 32-3
+  - Power - 63-3
+  - Power - 125-3
+  - Power - Distro
+NOC:
+  - NOC - Datenklo
+  - NOC - Datenklo radius
+  - NOC - Uplink
+  - NOC - Fiber
+  - NOC - Cat5e
+  - NOC - Cat5e - CCA
+Tents:
+  - Tents
+Paths:
+  - Paths - Fire Lane
+  - Paths - Euromat
+  - Paths - Track
+Perimeter:
+  - License Perimeter
+Labels:
+  - Labels
